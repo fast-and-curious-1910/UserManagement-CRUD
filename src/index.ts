@@ -15,7 +15,7 @@ app.use('/js',  express.static(path.resolve(__dirname, 'assets/js')))
 
 
 app.get('/' , (req, res) => {
-    res.send('Hello World!')
+    res.render('index')
     console.log(req.baseUrl)
 })
 
